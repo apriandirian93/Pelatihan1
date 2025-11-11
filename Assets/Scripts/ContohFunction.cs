@@ -8,7 +8,7 @@ public class ContohFunction : MonoBehaviour
         Debug.Log(perkalian(2, 3));
     }
     
-    public void perkalian(int angka7, int angka8)
+    public int perkalian(int angka7, int angka8)
     {
         int hasilkali = angka7 * angka8;
         return hasilkali;
