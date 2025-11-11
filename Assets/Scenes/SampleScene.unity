@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2004797111}
   - component: {fileID: 2004797110}
-  - component: {fileID: 2004797113}
+  - component: {fileID: 2004797112}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -428,7 +428,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2004797113
+--- !u!114 &2004797112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -437,13 +437,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2004797109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac52f12c33ede1c4b9cd7259394cb996, type: 3}
+  m_Script: {fileID: 11500000, guid: 74dadfd5376ecf94f9c0982bca1693d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arraynama:
-  - Budi
-  - Asep
-  - Tono
+  Listmobil:
+  - name: avanza
+    color: hitam
+    speed: 60
+  - name: agya
+    color: merah
+    speed: 40
 --- !u!1 &2086771023
 GameObject:
   m_ObjectHideFlags: 0
