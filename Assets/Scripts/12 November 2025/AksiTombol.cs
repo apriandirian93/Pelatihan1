@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AksiTombol : MonoBehaviour
@@ -11,10 +12,12 @@ public class AksiTombol : MonoBehaviour
     public TMP_Text objectText;
     public void Aksi()
     {
-        // mengubah gambar
-        image.sprite = assetGambar;
-        // mengubah teks
-        objectText.text = "RAM";
-        Debug.Log("Tombol ditekan");
+        // // mengubah gambar
+        // image.sprite = assetGambar;
+        // // mengubah teks
+        // objectText.text = "RAM";
+        // Debug.Log("Tombol ditekan");
+        
+        SceneManager.LoadScene("Day 3 Scene Baru");
     }
 }
