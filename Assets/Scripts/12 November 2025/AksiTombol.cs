@@ -18,6 +18,7 @@ public class AksiTombol : MonoBehaviour
         // objectText.text = "RAM";
         // Debug.Log("Tombol ditekan");
         
+        // Pindah ke scene baru
         SceneManager.LoadScene("Day 3 Scene Baru");
     }
 }
