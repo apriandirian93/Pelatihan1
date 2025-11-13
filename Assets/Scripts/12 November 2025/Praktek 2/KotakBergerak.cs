@@ -63,11 +63,22 @@ public class KotakBergerak : MonoBehaviour
             interaksiui12nov.skor++; //mengubah nilai dari skor pada class interaksiui12nov dengan menambahkan +1
             TambahSkor(); //memanggil fungsi TambahSkor dan memprosesnya
         }
+        if (collision.gameObject.CompareTag("Bola"))
+        {
+            Debug.Log("Kotak Menabrak Bola:");
+            interaksiui12nov.nyawa--;
+            KurangiNyawa();
+        }
     }
     
     public void TambahSkor() //membuat fungsi baru dengan nama TambahSkor
     {
         interaksiui12nov.TeksSkor.text = "Skor: " + interaksiui12nov.skor.ToString(); //mengubah isi text pada gameobject dengan class interaksiui12nov dan bertipe string
+    }
+
+    public void KurangiNyawa()
+    {
+        interaksiui12nov.TeksNyawa.text = "Nyawa: " + interaksiui12nov.nyawa.ToString();
     }
 }
 //pendeklarasian sebuah enumator dengan nama ArahGerak
